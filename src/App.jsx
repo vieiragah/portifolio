@@ -1,6 +1,5 @@
 import Sidebar from "./components/Sidebar"
 import MainContent from "./components/MainContent"
-import PreviewProjects from "./components/PreviewProjects"
 import "./styles/components/app.sass"
 
 
@@ -11,7 +10,6 @@ function App() {
       <h1>Gabriel Apolinario</h1>
       <Sidebar/>
       <MainContent/>
-      {/* <PreviewProjects/> */}
     </div>
   )
 }
