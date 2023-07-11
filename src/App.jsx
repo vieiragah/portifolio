@@ -1,4 +1,4 @@
-import Sidebar from "./components/sidebar"
+import Sidebar from "./components/Sidebar"
 import MainContent from "./components/MainContent"
 import PreviewProjects from "./components/PreviewProjects"
 import "./styles/components/app.sass"
