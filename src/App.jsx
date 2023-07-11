@@ -11,7 +11,7 @@ function App() {
       <h1>Gabriel Apolinario</h1>
       <Sidebar/>
       <MainContent/>
-      <PreviewProjects/>
+      {/* <PreviewProjects/> */}
     </div>
   )
 }

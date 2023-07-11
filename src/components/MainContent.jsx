@@ -1,5 +1,6 @@
 import '../styles/components/maincontent.sass';
 import AboutContainer from './AboutContainer';
+import PreviewProjects from './PreviewProjects';
 import ProjectsContainer from './ProjectsContainer';
 import TechnoContainer from './TechnoContainer';
 
@@ -10,6 +11,7 @@ const MainContent = () => {
       <AboutContainer/>
       <TechnoContainer/>
       <ProjectsContainer/>
+      <PreviewProjects/>
     </main>
   )
 }
