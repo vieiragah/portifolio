@@ -1,8 +1,8 @@
 import '../styles/components/previewprojects.sass'
 
 import calc from '../img/calc.jpg'
-import gva from '../img/gva.png'
-import git from '../img/gitapi.png'
+import gva from '../img/gva.jpg'
+import git from '../img/gitapi.jpg'
 const PreviewProjects = () => {
 
   const img = [
@@ -14,7 +14,7 @@ const PreviewProjects = () => {
       site: "https://gva-rouge.vercel.app/login" },
     {img: git, 
       details: 'Projeto realizado me Typescript, com Fetch para consumo da API do Github, neste projeto você pode pesquisar algumas informações de usuários desta plataforma.', 
-      site: "https://github.com/vieiragah" }
+      site: "https://api-git-smoky.vercel.app/" }
   ]
 
 
