@@ -5,15 +5,33 @@ import '../styles/components/sidebar.sass';
 import InformationContainer from './InformationContainer';
 
 const Sidebar = () => {
+
+
+    const handleDownload =  () => {
+
+      fetch('../../public/gabrielApolinario.pdf').then(res => {
+        res.blob().then(blob => {
+          const fileURL = window.URL.createObjectURL(blob);
+          let alink = document.createElement('a')
+          alink.href = fileURL;
+          alink.download = "GabrielAplinario.pdf"
+          alink.click()
+        })
+      })
+
+
+    }
+
+
   return (
     <aside id="sidebar">
       <img src={Avatar} alt="Gabriel Apolinario" />
       <p className="title">FullStack</p>
       <SocialNetworks/>
       <InformationContainer/> 
-      <a href="https://drive.google.com/uc?export=download&id=1Axv7B8qhkjIGtIKtX_EvZJBfO_gfV9DB" className="btn">
+      <button onClick={handleDownload} className="btn">
         Download currículo
-      </a>
+      </button>
     </aside>
   )
 }

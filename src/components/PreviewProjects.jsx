@@ -2,13 +2,19 @@ import '../styles/components/previewprojects.sass'
 
 import calc from '../img/calc.jpg'
 import gva from '../img/gva.png'
-import algo from '../img/breve.png'
+import git from '../img/gitapi.png'
 const PreviewProjects = () => {
 
   const img = [
-    {img: calc, details: 'Uma calculadora tem Typescript, utilizando 3 tipos de temas usando como estilização o styled-components.' },
-    {img: gva, details: 'Projeto totalmente altoral, realizado com NodeJs e Express no backend, MongoDB, e no frontend ReactJS e Styled-components com o propósito de dimencionar uma escala de funcionários dinâmicamente.' },
-    {img: algo, details: 'Projeto realizado me Typescript, com Axios para consumo da API do Github, neste projeto você pode pesquisar algumas informações de usuários desta plataforma.'}
+    {img: calc, 
+      details: 'Uma calculadora tem Typescript, utilizando 3 tipos de temas usando como estilização o styled-components.', 
+      site: "https://calculator-app-rosy-eight.vercel.app/?vercelToolbarCode=uwDV6uc0istivRW" },
+    {img: gva, 
+      details: 'Projeto totalmente altoral, realizado com NodeJs e Express no backend, MongoDB, e no frontend ReactJS e Styled-components com o propósito de dimencionar uma escala de funcionários dinâmicamente.',
+      site: "https://gva-rouge.vercel.app/login" },
+    {img: git, 
+      details: 'Projeto realizado me Typescript, com Fetch para consumo da API do Github, neste projeto você pode pesquisar algumas informações de usuários desta plataforma.', 
+      site: "https://github.com/vieiragah" }
   ]
 
 
@@ -17,7 +23,9 @@ const PreviewProjects = () => {
       <aside>
         {img.map((image, index) => (
           <div key={index}>
-            <img className='image-preview' src={image.img} alt="Imagem ilustratica do projeto." />
+            <a href={image.site} target='_blank'>
+              <img className='image-preview' src={image.img} alt="Imagem ilustratica do projeto." />
+              </a>
             <p className='image-p'>{image.details}</p>
             <hr className='line-break' />
           </div>
